@@ -1,9 +1,21 @@
 class PagesController < ApplicationController
-  
-  def home
+     
+  def about
   end
-
-  def contact
+  
+  def resume
+  end
+  
+  def experiences
+  end
+  
+  def blog
+  end
+  
+  def faqs
+  end
+  
+  def skills
   end
   
 end

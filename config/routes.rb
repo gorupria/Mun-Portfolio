@@ -1,12 +1,18 @@
 Portfolio::Application.routes.draw do
   
-  get "pages/home"
-  get "pages/contact"
+  root 'pages#about'
+  
+  match '/resume' => 'pages#resume', :via => [:get] #resume_path
+  match '/experiences' => 'pages#experiences', :via => [:get]
+  match '/blog' => 'pages#blog', :via => [:get]
+  match '/FAQs' => 'pages#faqs', :via => [:get], :as => 'faqs'
+  match '/skills' => 'pages#skills', :via => [:get]
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'pages#home'
+  #root 'pages#about'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

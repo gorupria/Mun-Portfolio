@@ -22,19 +22,25 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+#gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
+gem "bourbon", "~> 3.1.8"
 
 group :development do
   gem "rspec-rails", "~> 2.14.1"
-  gem "sqlite3", "~> 1.3.9"
+  gem "better_errors", "~> 1.1.0"
+  gem "binding_of_caller", "~> 0.7.2"
 end
+
+group :development, :test do
+  gem "sqlite3", "~> 1.3.9"
+  gem "webrat", "~> 0.7.3"
+end 
 
 group :test do
   gem "rspec", "~> 2.14.1"
-  gem "sqlite3", "~> 1.3.9"
 end
 
 #thin server and postgres DB on production

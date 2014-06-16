@@ -1,6 +1,11 @@
 class PagesController < ApplicationController
-     
+  
+  #in case if filtering needs to be done with ip_address and session hash
+  #:unique => [:ip_address, :session_hash]
+  impressionist :unique => [:ip_address]
+  
   def about
+    @impressions = Impression.count
   end
   
   def resume

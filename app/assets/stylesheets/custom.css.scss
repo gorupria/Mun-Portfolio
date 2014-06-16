@@ -56,7 +56,7 @@ body{
 	width: 1020px;
 	margin: 0 auto;
 	padding-top: 1%;
-	min-height: 100%;
+	min-height: 85%; //min-height: 100%
 }
 
 #navigation{
@@ -85,8 +85,8 @@ section{
 	font-size: 120%;
 	padding: 20px;
 	background: #F3F2EF;
-	padding-bottom: 160px;
-	overflow: auto;
+	/*padding-bottom: 140px;
+	#overflow: auto;*/
 	
 	i{
 		font-size: 80%;
@@ -99,7 +99,7 @@ footer{
 	@include box-shadow(0 0 6px 3px #000);
 	clear: both;
 	position:relative;
-	margin-top: -145px;
+	margin-top: 1em;
 	height: 160px;
 	width: 100%;
 	
@@ -228,6 +228,10 @@ nav ul{
 
 .expCapsul{
 	margin-left: 2%;
+}
+
+#counter{
+	color: white;
 }
 
 

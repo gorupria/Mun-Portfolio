@@ -48,7 +48,6 @@ end
 #thin server and postgres DB on production
 group :production do
   gem "pg", "~> 0.17.1"
-  gem 'thin'
 end
 
 group :doc do

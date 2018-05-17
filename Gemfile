@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '2.5.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
@@ -48,6 +47,7 @@ end
 #thin server and postgres DB on production
 group :production do
   gem "pg", "~> 0.17.1"
+  gem 'thin', '~> 1.7', '>= 1.7.2'
 end
 
 group :doc do

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Portfolio | <%= @page_title %></title>
+  <title>Purushot | <%= @page_title %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -9,10 +9,6 @@
 <body>
 	<div class="container">
 		<header>
-			<div id="line">
-			<%= image_tag('portfolio1.png', :alt => "profile image")%>
-			<hr width="3" size="177">
-			</div>
 			<%= render 'layouts/contact' %>
 				<%= render 'layouts/navigation' %>
 		</header>

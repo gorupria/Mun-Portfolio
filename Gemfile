@@ -50,7 +50,6 @@ group :production do
   gem 'thin', '~> 1.7', '>= 1.7.2'
 end
 
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

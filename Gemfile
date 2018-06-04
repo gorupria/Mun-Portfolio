@@ -26,7 +26,7 @@ gem 'jbuilder', '~> 2.7'
 gem "bourbon", "~> 3.1.8"
 
 group :development do
-  gem "rspec-rails", "~> 2.14.1"
+  gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
   gem 'better_errors', '~> 2.4'
   gem "binding_of_caller", "~> 0.7.2"
 end
@@ -37,7 +37,7 @@ group :development, :test do
 end 
 
 group :test do
-  gem "rspec", "~> 2.14.1"
+  gem 'rspec', '~> 3.7'
 end
 
 #thin server and postgres DB on production
